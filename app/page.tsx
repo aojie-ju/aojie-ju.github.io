@@ -51,20 +51,23 @@ export default function Home() {
             <p className="text-sm">
               <a
                 href="mailto:aojieju@gmail.com"
+                aria-label="Email Aojie Ju at aojieju@gmail.com"
                 className="hover:text-sage hover:underline"
               >
                 aojieju@gmail.com
               </a>
-              <span className="mx-2 text-ink/30">·</span>
+              <span className="mx-2 text-ink/30" aria-hidden="true">·</span>
               <a
                 href="https://www.linkedin.com/in/aojie-ju-3b499216b/"
+                aria-label="Aojie Ju on LinkedIn"
                 className="hover:text-sage hover:underline"
               >
                 LinkedIn
               </a>
-              <span className="mx-2 text-ink/30">·</span>
+              <span className="mx-2 text-ink/30" aria-hidden="true">·</span>
               <a
                 href="https://github.com/aojie-ju"
+                aria-label="Aojie Ju on GitHub"
                 className="hover:text-sage hover:underline"
               >
                 GitHub
@@ -72,10 +75,10 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="/headshot.png"
+            src="/headshot.webp"
             alt="Aojie Ju"
-            width={120}
-            height={120}
+            width={360}
+            height={360}
             className="rounded-full object-cover w-[120px] h-[120px]"
             priority
           />
@@ -219,6 +222,9 @@ export default function Home() {
                   — Dec 2025 → Present
                 </span>
               </h3>
+              <p className="text-sm text-ink/70 mb-2 leading-snug">
+                Real-time AI copilot for live classroom discussions.
+              </p>
               <p className="text-sm leading-relaxed text-ink/85 mb-3">
                 AI-assisted classroom forum used by instructors to run live
                 discussion sessions with real-time AI copilot support. I
@@ -243,6 +249,10 @@ export default function Home() {
                   — 2025
                 </span>
               </h3>
+              <p className="text-sm text-ink/70 mb-2 leading-snug">
+                Federal-compliant credentialing + labor-market infrastructure
+                for US higher education.
+              </p>
               <p className="text-sm leading-relaxed text-ink/85 mb-3">
                 Accreditation infrastructure for US higher-ed institutions:
                 Ed25519/AES-256-GCM cryptographic credentialing (IMS CLR 2.0),
@@ -258,6 +268,38 @@ export default function Home() {
                 'BLS API',
                 'Docker',
                 'MCP',
+              ])}
+            </article>
+            <article>
+              <h3 className="text-base font-semibold mb-2">
+                tax-workflow-mcp{' '}
+                <span className="text-sm font-normal text-ink/60">
+                  — 2026
+                </span>
+              </h3>
+              <p className="text-sm text-ink/70 mb-2 leading-snug">
+                Free, privacy-first US tax filing for F-1 / J-1 international
+                students.
+              </p>
+              <p className="text-sm leading-relaxed text-ink/85 mb-3">
+                An MCP server + skill that handles 1040-NR, Form 8843, treaty
+                benefits, FICA refund (Forms 843 + 8316), and dual-status
+                returns — the cases TurboTax and Cash App Taxes refuse.
+                Sprintax charges $50–$100/year for the same scope; this is
+                free. Your SSN never enters Claude&apos;s context.{' '}
+                <a
+                  href="https://github.com/aojie-ju/tax-workflow-mcp"
+                  className="text-sage hover:underline"
+                >
+                  [GitHub]
+                </a>
+              </p>
+              {techTags([
+                'TypeScript',
+                'MCP',
+                'Claude Code',
+                'pdf-lib',
+                'Zod',
               ])}
             </article>
           </div>
@@ -279,22 +321,31 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="pt-8 border-t border-ink/10 text-xs text-ink/60 text-center">
-          <a href="mailto:aojieju@gmail.com" className="hover:text-sage">
+          <a
+            href="mailto:aojieju@gmail.com"
+            aria-label="Email Aojie Ju at aojieju@gmail.com"
+            className="hover:text-sage"
+          >
             aojieju@gmail.com
           </a>
-          <span className="mx-2">·</span>
+          <span className="mx-2" aria-hidden="true">·</span>
           <a
             href="https://www.linkedin.com/in/aojie-ju-3b499216b/"
+            aria-label="Aojie Ju on LinkedIn"
             className="hover:text-sage"
           >
             LinkedIn
           </a>
-          <span className="mx-2">·</span>
-          <a href="https://github.com/aojie-ju" className="hover:text-sage">
+          <span className="mx-2" aria-hidden="true">·</span>
+          <a
+            href="https://github.com/aojie-ju"
+            aria-label="Aojie Ju on GitHub"
+            className="hover:text-sage"
+          >
             GitHub
           </a>
-          <span className="mx-2">·</span>
-          <span>Built with Next.js on GitHub Pages</span>
+          <span className="mx-2" aria-hidden="true">·</span>
+          <span>© {new Date().getFullYear()} Aojie Ju · Built with Next.js on GitHub Pages</span>
         </footer>
       </div>
     </main>
