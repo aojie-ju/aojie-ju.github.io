@@ -110,13 +110,13 @@ export default function Home() {
           <div className="space-y-6">
             <article>
               <p className="text-base leading-relaxed">
-                <strong className="font-semibold">Ju, A.</strong> (2026).{' '}
+                <strong className="font-semibold">Ju, A.</strong>, &amp; Pi, Y. (2026).{' '}
                 <em>
-                  Can LLMs Infer Political Parties&apos; Strategic Behavior?
-                  Evidence from Spatial Voting Models.
+                  From Strategy Recognition to Strategic Adaptation:
+                  Validating LLM Agents in Spatial Voting Models.
                 </em>{' '}
                 International Conference on Computational Social Science (IC2S2
-                2026).{' '}
+                2026), Burlington, VT.{' '}
                 <a
                   href="/papers/ic2s2-2026.pdf"
                   className="text-sage hover:underline"
@@ -125,10 +125,13 @@ export default function Home() {
                 </a>
               </p>
               <p className="text-sm text-ink/70 mt-2 leading-relaxed">
-                Evaluated 6 frontier LLM configurations (GPT-4o, MiniMax-M2.1,
-                Qwen 2.5/3) on a 5-strategy inference task across 50
-                multi-party simulations; found 9.4–39% accuracy revealing
-                limits of LLMs as political-simulation agents.
+                Two studies test whether LLMs can both recognize and enact five
+                classic party strategies in a Laver (2005) spatial voting model.
+                GPT-4o recognizes strategies at 39% (vs 20% chance) but, as a
+                competing agent, rigidly plays one strategy regardless of
+                opponent — recognition and use are uncorrelated (r = -0.15),
+                showing that passing an inference test is necessary but
+                insufficient for LLM social-simulation agents.
               </p>
             </article>
             <article>
@@ -148,7 +151,24 @@ export default function Home() {
                 </a>
               </p>
             </article>
+            <article>
+              <p className="text-base leading-relaxed">
+                Henrici, J.,{' '}
+                <strong className="font-semibold">Ju, A.</strong>, &amp;
+                Raulston, C. (2021).{' '}
+                <em>
+                  Feeding Families in Wuhan During a COVID-19 Quarantine:
+                  Intersectional Adaptations to a Disaster.
+                </em>{' '}
+                Natural Hazards Center Quick Response Research Report.
+              </p>
+            </article>
           </div>
+          <p className="text-sm text-ink/70 mt-8 leading-relaxed">
+            <span className="font-semibold text-ink">Service.</span> Reviewer,
+            International Conference on Computational Social Science (IC2S2),
+            2026.
+          </p>
         </section>
 
         {/* Selected Research */}
