@@ -264,30 +264,68 @@ export default function Home() {
             </article>
             <article>
               <h3 className="text-base font-semibold mb-2">
-                National Accreditation Platform{' '}
+                AlgoMinds{' '}
                 <span className="text-sm font-normal text-ink/60">
-                  — 2025
+                  — 2026 → Present
                 </span>
               </h3>
               <p className="text-sm text-ink/70 mb-2 leading-snug">
-                Federal-compliant credentialing + labor-market infrastructure
-                for US higher education.
+                A multi-agent LLM system built under an explicit contract
+                about what it is allowed to assert.
               </p>
               <p className="text-sm leading-relaxed text-ink/85 mb-3">
-                Accreditation infrastructure for US higher-ed institutions:
-                Ed25519/AES-256-GCM cryptographic credentialing (IMS CLR 2.0),
-                federal Gainful Employment regulatory logic, BLS labor-market
-                integration (600+ time series), Docker-isolated agent sandbox
-                for untrusted ML evaluators, and the Colleague AI Distillation
-                MCP server.
+                Technical lead of a 6–7 person team building agents that
+                produce financial analyses, working with Claude Code as the
+                coding partner. The interest is not the finance — it is that
+                the domain makes over-claiming expensive, and therefore
+                testable. The methodology I wrote governs what a report may
+                say: every fact must sit on one declared tier of an evidence
+                ladder — measured, derived, modelled, cited, or absent — with
+                deliberately no tier for &ldquo;the model believes,&rdquo; and
+                the system permanently declines the one question, position
+                sizing, that would cross from analysis into advice. The ladder
+                is the adopted standard and the governing document;
+                enforcement in code is still being built. Non-commercial.
               </p>
               {techTags([
-                'Node.js',
+                'LangGraph',
+                'FastAPI',
+                'PostgreSQL',
+                'AWS CDK',
+                'Next.js',
+                'Cognito',
+              ])}
+            </article>
+            <article>
+              <h3 className="text-base font-semibold mb-2">
+                National Accreditation Platform{' '}
+                <span className="text-sm font-normal text-ink/60">
+                  — 2025 → 2026
+                </span>
+              </h3>
+              <p className="text-sm text-ink/70 mb-2 leading-snug">
+                Federal compliance reporting for US higher education, where
+                every published figure carries its provenance.
+              </p>
+              <p className="text-sm leading-relaxed text-ink/85 mb-3">
+                A reporting suite of five print-grade exhibits that attaches
+                data provenance to every figure it publishes and withholds
+                conclusions the underlying record cannot support, integrating
+                BLS, IPEDS, College Scorecard, PSEO, O*NET and Census sources
+                through CIP/SOC/NAICS crosswalks. Also federal Gainful
+                Employment regulatory logic, Ed25519/AES-256-GCM credentialing
+                (IMS CLR 2.0), and a Docker-isolated sandbox for untrusted ML
+                evaluators. The platform entered pilot at Idaho State
+                University in July 2026, preparing workforce programs for
+                federal Workforce Pell eligibility.
+              </p>
+              {techTags([
+                'Express 5',
+                'PostgreSQL',
+                'BullMQ',
+                'Playwright',
                 'Ed25519',
-                'IMS CLR 2.0',
-                'BLS API',
                 'Docker',
-                'MCP',
               ])}
             </article>
             <article>
