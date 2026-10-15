@@ -5,16 +5,16 @@ const siteUrl = 'https://aojie-ju.github.io'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Aojie Ju — AI engineer & computational social scientist',
+  title: 'Aojie Ju — data scientist & computational social scientist',
   description:
-    'AI engineer at AristAI; IC2S2 2026 paper on computational social science; UIUC MS Data Science; bilingual EN/中文. I build AI products and study how they land across cultures.',
+    'Data scientist at AristAI; IC2S2 2026 paper on LLM agents; UIUC M.S. Data Science; bilingual EN/中文. I test whether AI systems, and the numbers built on them, can be trusted.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Aojie Ju — AI engineer & computational social scientist',
+    title: 'Aojie Ju — data scientist & computational social scientist',
     description:
-      'I build AI products and study how they land across cultures. AristAI · IC2S2 2026 · UIUC MS Data Science.',
+      'I test whether AI systems, and the numbers built on them, can be trusted. AristAI · IC2S2 2026 · UIUC M.S. Data Science.',
     type: 'profile',
     url: siteUrl,
     siteName: 'Aojie Ju',
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Aojie Ju — AI engineer & computational social scientist',
+        alt: 'Aojie Ju — data scientist & computational social scientist',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aojie Ju — AI engineer & computational social scientist',
-    description: 'I build AI products and study how they land across cultures.',
+    title: 'Aojie Ju — data scientist & computational social scientist',
+    description: 'I test whether AI systems, and the numbers built on them, can be trusted.',
     images: ['/og-image.png'],
   },
 }
@@ -43,7 +43,7 @@ const personSchema = {
   familyName: 'Ju',
   url: siteUrl,
   image: `${siteUrl}/og-image.png`,
-  jobTitle: 'AI Engineer',
+  jobTitle: 'Data Scientist',
   worksFor: { '@type': 'Organization', name: 'AristAI' },
   alumniOf: [
     { '@type': 'CollegeOrUniversity', name: 'University of Illinois Urbana-Champaign' },
@@ -51,12 +51,12 @@ const personSchema = {
     { '@type': 'CollegeOrUniversity', name: 'Nanjing University' },
   ],
   knowsAbout: [
+    'Data science',
+    'AI evaluation',
     'Large language models',
     'Computational social science',
-    'AI evaluation',
-    'Political reasoning in AI',
-    'AI in education',
-    'Cross-cultural AI evaluation',
+    'Causal inference',
+    'Survey research',
   ],
   knowsLanguage: ['English', 'Mandarin Chinese'],
   email: 'mailto:aojieju@gmail.com',

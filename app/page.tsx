@@ -25,8 +25,8 @@ export default function Home() {
           <a href="#research" className="hover:text-sage transition-colors">
             Research
           </a>
-          <a href="#projects" className="hover:text-sage transition-colors">
-            Projects
+          <a href="#work" className="hover:text-sage transition-colors">
+            Work
           </a>
           <a href="#about" className="hover:text-sage transition-colors">
             About
@@ -42,11 +42,12 @@ export default function Home() {
               Aojie Ju
             </h1>
             <p className="text-xl mb-3 leading-snug">
-              I build AI products and study how they land across cultures.
+              I test whether AI systems, and the numbers built on them, can be
+              trusted.
             </p>
             <p className="text-sm text-ink/70 mb-5 leading-relaxed">
-              AristAI AI engineer · IC2S2 2026 paper on computational social
-              science · UIUC MS Data Science · bilingual EN/中文
+              Data Scientist at AristAI · IC2S2 2026 paper on LLM agents · UIUC
+              M.S. Data Science · bilingual EN/中文
             </p>
             <p className="text-sm">
               <a
@@ -94,13 +95,14 @@ export default function Home() {
             (presented at MPSA 2023) and earlier, Asian American political
             behavior — I kept running into the same question: how do
             institutions and the agents inside them actually shape behavior?
-            When the methods to answer it changed, I followed. An MS in Data
-            Science. Last year, quantitative work on weather-derivative
-            pricing, election sentiment, and ETF prediction. Now I build
-            LLM-powered tools for classroom discussion at AristAI, and study
-            what frontier models can and can&apos;t infer about political
-            strategy (IC2S2 2026). The thread is the question and the methods,
-            not the field.
+            When the methods to answer it changed, I followed. An M.S. in Data
+            Science, with research at the Illinois Risk Lab on weather
+            derivatives, insurance, public safety and election sentiment. Now
+            I&apos;m a data scientist at AristAI, working on AI tools for
+            college accreditation and on measuring when their judgments can be
+            trusted, and I study what frontier models can and can&apos;t infer
+            about political strategy (IC2S2 2026). The thread is the question
+            and the methods, not the field.
           </p>
         </section>
 
@@ -116,7 +118,8 @@ export default function Home() {
                   Validating LLM Agents in Spatial Voting Models.
                 </em>{' '}
                 International Conference on Computational Social Science (IC2S2
-                2026), Burlington, VT.{' '}
+                2026), Burlington, VT; an earlier version appeared at the
+                PoliSim Workshop, CHI 2026.{' '}
                 <a
                   href="/papers/ic2s2-2026.pdf"
                   className="text-sage hover:underline"
@@ -125,13 +128,12 @@ export default function Home() {
                 </a>
               </p>
               <p className="text-sm text-ink/70 mt-2 leading-relaxed">
-                Two studies test whether LLMs can both recognize and enact five
-                classic party strategies in a Laver (2005) spatial voting model.
-                GPT-4o recognizes strategies at 39% (vs 20% chance) but, as a
-                competing agent, rigidly plays one strategy regardless of
-                opponent — recognition and use are uncorrelated (r = -0.15),
-                showing that passing an inference test is necessary but
-                insufficient for LLM social-simulation agents.
+                Two studies ask whether LLMs that recognize a party&apos;s
+                strategy from simulated trajectories also choose it when placed
+                in the agent&apos;s role, in Laver&apos;s (2005) spatial model
+                of party competition. Six LLM configurations recognized
+                strategies at 9.4–39% accuracy (chance: 20%); recognizing a
+                strategy and choosing it were not clearly related.
               </p>
             </article>
             <article>
@@ -177,41 +179,43 @@ export default function Home() {
           <div className="space-y-6">
             <article>
               <h3 className="text-base font-semibold mb-1">
-                Colleague AI Distillation MCP Server{' '}
-                <span className="text-sm font-normal text-ink/60">— 2025</span>
+                Pricing Weather Derivatives under Stochastic Volatility{' '}
+                <span className="text-sm font-normal text-ink/60">
+                  — IRisk Lab, co-authored team report, 2025
+                </span>
               </h3>
               <p className="text-sm leading-relaxed text-ink/85">
-                Standalone MCP server synthesizing domain-expert evaluator
-                personas from heterogeneous scholarly sources (Google Scholar,
-                ORCID, ResearchGate) via Claude-generated 5-layer schemas.
+                Led model calibration: an Ornstein–Uhlenbeck temperature model
+                with Cox–Ingersoll–Ross volatility, fit to 45 years of daily
+                data for 13 cities. Priced degree-day derivatives by Monte Carlo
+                and FFT and checked them against CME settlement prices; the
+                standard model understated tail risk.
               </p>
             </article>
             <article>
               <h3 className="text-base font-semibold mb-1">
-                2024 Election Sentiment &amp; Voting Forecasts{' '}
+                2024 Election Sentiment{' '}
                 <span className="text-sm font-normal text-ink/60">
                   — IRisk Lab, 2024
                 </span>
               </h3>
               <p className="text-sm leading-relaxed text-ink/85">
-                Transformer-based sentiment analysis (Cardiff RoBERTa,
-                fine-tuned LSTM) forecasting voting outcomes within 3% error;
-                methodological connection to LLM-based public-opinion
-                measurement.
+                Measured sentiment in 2024 presidential-election tweets (Cardiff
+                RoBERTa, fine-tuned LSTM) and documented where model-based
+                opinion measurement breaks down.
               </p>
             </article>
             <article>
               <h3 className="text-base font-semibold mb-1">
-                Pricing Weather Derivatives under Stochastic Volatility{' '}
+                Insurance and Public-Safety Models{' '}
                 <span className="text-sm font-normal text-ink/60">
-                  — IRisk Lab, co-authored, 2025
+                  — IRisk Lab, 2024–2025
                 </span>
               </h3>
               <p className="text-sm leading-relaxed text-ink/85">
-                Calibrated Model M (OU + CIR) on daily temperature from 13
-                international cities; priced HDD derivatives via Monte Carlo
-                and FFT; validated against CME market quotes. Led model
-                calibration.
+                Tree-based models predicting life-insurance purchase (AUC from
+                0.78 to 0.86), and a GLM for San Francisco crime-prevention
+                analysis (deviance explained from 55% to 63%).
               </p>
             </article>
             <article>
@@ -222,44 +226,47 @@ export default function Home() {
                 </span>
               </h3>
               <p className="text-sm leading-relaxed text-ink/85">
-                Sole-authored quasi-experimental RDD on the Cape/Boer
-                demarcation in South Africa; finds the land system drives
-                4–12% gaps in modern compulsory education and household
-                electricity.
+                Sole-authored regression discontinuity design at the Cape/Boer
+                boundary in South Africa: the land system, not legal or cultural
+                Anglicization, drives 4–12% gaps in compulsory schooling and
+                household electricity today.
               </p>
             </article>
           </div>
         </section>
 
-        {/* Projects */}
-        <section id="projects" className="mb-20 scroll-mt-16">
-          <h2 className="text-xl font-semibold mb-6">Projects</h2>
+        {/* Work and Projects */}
+        <section id="work" className="mb-20 scroll-mt-16">
+          <h2 className="text-xl font-semibold mb-6">Work and Projects</h2>
           <div className="space-y-8">
             <article>
               <h3 className="text-base font-semibold mb-2">
-                AristAI{' '}
+                AristAI, Data Scientist{' '}
                 <span className="text-sm font-normal text-ink/60">
                   — Sept 2026 → Present
                 </span>
               </h3>
               <p className="text-sm text-ink/70 mb-2 leading-snug">
-                Real-time AI copilot for live classroom discussions.
+                AI tools that turn a college&apos;s own files into a
+                submission-ready accreditation self-study.
               </p>
               <p className="text-sm leading-relaxed text-ink/85 mb-3">
-                AI-assisted classroom forum used by instructors to run live
-                discussion sessions with real-time AI copilot support. I
-                designed the LLM-based voice intent classifier (30+ intent
-                categories, bilingual), the LangGraph-orchestrated copilot
-                with token-cost observability, and the MCP server exposing
-                30+ educational tools to AI agents.
+                Staff confirm the decisions instead of writing and checking by
+                hand. I work on whether the AI can be trusted: every output is
+                traced to the exact files it read and graded by a model from a
+                different provider than the one that wrote it, the AI review is
+                calibrated against an accreditor&apos;s own human ratings, and
+                AI assessments stay advisory, so a person makes the call. I
+                also keep the earnings data honest: public certificate-program
+                earnings stay apart from College Scorecard and Census figures
+                that measure different graduates.
               </p>
               {techTags([
-                'Next.js',
-                'FastAPI',
+                'LLM evaluation',
+                'Calibration',
+                'Python',
                 'PostgreSQL',
-                'LangGraph',
-                'MCP',
-                'Claude API',
+                'Claude Code',
               ])}
             </article>
             <article>
@@ -298,38 +305,6 @@ export default function Home() {
             </article>
             <article>
               <h3 className="text-base font-semibold mb-2">
-                National Accreditation Platform{' '}
-                <span className="text-sm font-normal text-ink/60">
-                  — 2025 → 2026
-                </span>
-              </h3>
-              <p className="text-sm text-ink/70 mb-2 leading-snug">
-                Federal compliance reporting for US higher education, where
-                every published figure carries its provenance.
-              </p>
-              <p className="text-sm leading-relaxed text-ink/85 mb-3">
-                A reporting suite of five print-grade exhibits that attaches
-                data provenance to every figure it publishes and withholds
-                conclusions the underlying record cannot support, integrating
-                BLS, IPEDS, College Scorecard, PSEO, O*NET and Census sources
-                through CIP/SOC/NAICS crosswalks. Also federal Gainful
-                Employment regulatory logic, Ed25519/AES-256-GCM credentialing
-                (IMS CLR 2.0), and a Docker-isolated sandbox for untrusted ML
-                evaluators. The platform entered pilot at Idaho State
-                University in July 2026, preparing workforce programs for
-                federal Workforce Pell eligibility.
-              </p>
-              {techTags([
-                'Express 5',
-                'PostgreSQL',
-                'BullMQ',
-                'Playwright',
-                'Ed25519',
-                'Docker',
-              ])}
-            </article>
-            <article>
-              <h3 className="text-base font-semibold mb-2">
                 tax-workflow-mcp{' '}
                 <span className="text-sm font-normal text-ink/60">
                   — 2026
@@ -360,6 +335,19 @@ export default function Home() {
                 'Zod',
               ])}
             </article>
+            <article>
+              <h3 className="text-base font-semibold mb-2">
+                Colleague AI Distillation MCP Server{' '}
+                <span className="text-sm font-normal text-ink/60">
+                  — 2025
+                </span>
+              </h3>
+              <p className="text-sm leading-relaxed text-ink/85">
+                Standalone MCP server synthesizing domain-expert evaluator
+                personas from heterogeneous scholarly sources (Google Scholar,
+                ORCID, ResearchGate) via Claude-generated 5-layer schemas.
+              </p>
+            </article>
           </div>
         </section>
 
@@ -367,13 +355,13 @@ export default function Home() {
         <section id="about" className="mb-20 scroll-mt-16">
           <h2 className="text-xl font-semibold mb-6">About</h2>
           <p className="text-sm leading-relaxed text-ink/85">
-            Currently in Champaign, IL, working as AI engineer at AristAI.
+            Currently in Urbana, IL, working as a data scientist at AristAI.
             Trained at UIUC (M.S. Data Science 2025; M.A. Political Science
             2024, within Ph.D. program), George Washington University (M.A.
             International Affairs 2020), and Nanjing University (B.A. History
             2018). Mandarin Chinese (native), English (full professional).
-            Currently writing on cross-cultural LLM evaluation and AI-assisted
-            teaching.
+            Currently writing on whether LLM-simulated survey respondents
+            capture how much real people disagree.
           </p>
         </section>
 
