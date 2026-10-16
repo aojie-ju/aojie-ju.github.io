@@ -98,11 +98,11 @@ export default function Home() {
             When the methods to answer it changed, I followed. An M.S. in Data
             Science, with research at the Illinois Risk Lab on weather
             derivatives, insurance, public safety and election sentiment. Now
-            I&apos;m a data scientist at AristAI, working on AI tools for
-            college accreditation and on measuring when their judgments can be
-            trusted, and I study what frontier models can and can&apos;t infer
-            about political strategy (IC2S2 2026). The thread is the question
-            and the methods, not the field.
+            I&apos;m a data scientist at AristAI, working on LLM evaluation and
+            agent design for an AI accreditation platform, and I study what
+            frontier models can and can&apos;t infer about political strategy
+            (IC2S2 2026). The thread is one question: when can a model&apos;s
+            judgment stand in for a person&apos;s?
           </p>
         </section>
 
@@ -247,21 +247,21 @@ export default function Home() {
                 </span>
               </h3>
               <p className="text-sm text-ink/70 mb-2 leading-snug">
-                AI tools that turn a college&apos;s own files into a
-                submission-ready accreditation self-study.
+                An AI platform that evaluates program quality and helps colleges
+                prepare for accreditation.
               </p>
               <p className="text-sm leading-relaxed text-ink/85 mb-3">
-                Staff confirm the decisions instead of writing and checking by
-                hand. I work on whether the AI can be trusted: every output is
-                traced to the exact files it read and graded by a model from a
-                different provider than the one that wrote it, the AI review is
-                calibrated against an accreditor&apos;s own human ratings, and
-                AI assessments stay advisory, so a person makes the call. I
-                also keep the earnings data honest: public certificate-program
-                earnings stay apart from College Scorecard and Census figures
-                that measure different graduates.
+                I work on whether its AI can be trusted. I evaluate the
+                platform&apos;s LLM outputs with a judge model from a different
+                provider, blind expert labels and agreement statistics, and
+                calibrate AI ratings against human expert ratings. I also design
+                the LLM agents behind its verification and documentation work,
+                with separate drafting and fact-checking roles and a person
+                confirming every decision, so staff confirm decisions instead of
+                writing and checking by hand.
               </p>
               {techTags([
+                'AI agents',
                 'LLM evaluation',
                 'Calibration',
                 'Python',
