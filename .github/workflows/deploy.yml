@@ -48,6 +48,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # GitHub's own "pages build and deployment" (a Jekyll build of the branch) also runs on
+      # every push, and the site shows whichever deploys last. On 2026-10-16 it finished
+      # second and the site showed the README. Until Settings > Pages > Source is set to
+      # "GitHub Actions", wait so this export always deploys after it.
+      - name: Let the branch build finish first
+        run: sleep 150
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
